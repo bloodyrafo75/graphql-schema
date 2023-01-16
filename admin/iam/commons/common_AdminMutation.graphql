@@ -81,4 +81,11 @@ extend type AdminMutation {
   ): Member!
   # Delete organization and related member roles.
   deleteOrganization(organization: DeleteOrganizationInput!): Organization!
+  """Add parter to an Organization"""
+  setPartnerToOrganization(orgCode: ID!, partnerCode: ID!): Organization!
+  """Remove parter to an Organization"""
+  removePartnerFromOrganization(orgCode: ID!): Organization!
+
+
+
 }

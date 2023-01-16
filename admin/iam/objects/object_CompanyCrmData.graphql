@@ -1,0 +1,6 @@
+type CompanyCrmData {
+  crmID: String!
+  connectionType: [ConnectionType!]
+  contract: [Contract!]
+  techPlatformName: String
+}
